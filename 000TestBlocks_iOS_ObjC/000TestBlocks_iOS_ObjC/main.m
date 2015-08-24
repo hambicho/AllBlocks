@@ -19,6 +19,26 @@ int main(int argc, char * argv[]) {
         NSMutableArray *newStrings = [NSMutableArray array];
         // Create a list of characters that we'll remove from the string
         NSArray *vowels = [NSArray arrayWithObjects:@"a", @"e", @"i", @"o", @"u", nil];
+        
+        // Declare de block variable:
+        void (^devowelizer)(id, NSUInteger, BOOL *);
+        
+        // Assign a block to the variable:
+        devowelizer = ^(id string, NSUInteger i, BOOL *stop){
+            NSMutableString *newString = [NSMutableString stringWithString:string];
+            // Iterate over the array of vowel, replacing occurrences of each
+            // with an smpty string
+            for (NSString *s in vowels) {
+                NSRange fullRange = NSMakeRange(0, [newString length]);
+                [newString replaceOccurrencesOfString:s withString:@"" options:NSCaseInsensitiveSearch range:fullRange];
+            }
+            [newStrings addObject:newString];
+        }; // End of block assignment
+        
+        // Iterate over the array with our block
+        [oldStrings enumerateObjectsUsingBlock:devowelizer];
+        NSLog(@"new string: %@", newStrings);
+        
     }
     return 0;
 }
