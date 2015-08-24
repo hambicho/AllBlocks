@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C8D6915-B687-4A54-8BEB-5DE937C733F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>786511D5C010B0D8D4C800A02129A8C6FB2905BB</key>
+		<string>https://github.com/hambicho/AllBlocks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>002MoreExamplesBlocks_iOS_ObjC/002MoreExamplesBlocks_iOS_ObjC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>786511D5C010B0D8D4C800A02129A8C6FB2905BB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hambicho/AllBlocks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>786511D5C010B0D8D4C800A02129A8C6FB2905BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>786511D5C010B0D8D4C800A02129A8C6FB2905BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AllBlocks</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRO-cQ-3va">
+                                <rect key="frame" x="260" y="55" width="81" height="30"/>
+                                <state key="normal" title="Example 01">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn01:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WqW-mj-0t4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-Yy-7g5">
+                                <rect key="frame" x="260" y="100" width="81" height="30"/>
+                                <state key="normal" title="Example 02">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn02:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DhN-m0-ctP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RID-fg-LXZ">
+                                <rect key="frame" x="260" y="143" width="81" height="30"/>
+                                <state key="normal" title="Example 03">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn03:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6gj-rt-chd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQa-Q1-uhU">
+                                <rect key="frame" x="260" y="187" width="81" height="30"/>
+                                <state key="normal" title="Example 04">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn04:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iQB-aM-5KT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LQ-UP-kCT">
+                                <rect key="frame" x="260" y="236" width="81" height="30"/>
+                                <state key="normal" title="Example 05">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn05:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hcs-DE-Etd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examples of Blocks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyo-Bx-5uX">
+                                <rect key="frame" x="224" y="20" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KRO-cQ-3va" secondAttribute="centerX" id="4rv-gU-jE3"/>
+                            <constraint firstItem="KRO-cQ-3va" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="Ar2-xE-yXN"/>
+                            <constraint firstAttribute="centerX" secondItem="RID-fg-LXZ" secondAttribute="centerX" id="BJY-xw-IGO"/>
+                            <constraint firstAttribute="centerX" secondItem="hQa-Q1-uhU" secondAttribute="centerX" id="NdR-pK-4ep"/>
+                            <constraint firstAttribute="centerX" secondItem="1LQ-UP-kCT" secondAttribute="centerX" id="WsH-DD-Ajy"/>
+                            <constraint firstItem="Gvz-Yy-7g5" firstAttribute="top" secondItem="KRO-cQ-3va" secondAttribute="bottom" constant="15" id="bbB-i8-A4n"/>
+                            <constraint firstAttribute="centerX" secondItem="Gvz-Yy-7g5" secondAttribute="centerX" id="fTx-VI-Djh"/>
+                            <constraint firstItem="RID-fg-LXZ" firstAttribute="top" secondItem="Gvz-Yy-7g5" secondAttribute="bottom" constant="13" id="fUi-Fw-34J"/>
+                            <constraint firstAttribute="centerX" secondItem="Zyo-Bx-5uX" secondAttribute="centerX" id="fub-BD-mY2"/>
+                            <constraint firstItem="Zyo-Bx-5uX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="kUP-t9-dta"/>
+                            <constraint firstItem="hQa-Q1-uhU" firstAttribute="top" secondItem="RID-fg-LXZ" secondAttribute="bottom" constant="14" id="qb8-eJ-cyV"/>
+                            <constraint firstItem="1LQ-UP-kCT" firstAttribute="top" secondItem="hQa-Q1-uhU" secondAttribute="bottom" constant="19" id="rZc-zS-BoM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
