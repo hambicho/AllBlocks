@@ -54,7 +54,7 @@
 // execute the block
     sillyBlock();
 // check the values of our variable again, after calling the block
-    NSLog(@" a == %d",a);  // outputs "a == 47"    
+    NSLog(@" a == %d",a);  // outputs "a == 47"
     
     
     
@@ -62,7 +62,16 @@
 }
 
 - (IBAction)btn03:(id)sender {
-    
+    NSArray *color = [NSArray arrayWithObjects:@"Red",@"Green",@"Blue", nil];
+    // Enumerating usign block
+    [color enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"%@ at %lu", obj, idx);
+        if (idx == 1) {
+            NSLog(@"Found index 1, stopping");
+            *stop = YES;
+        }
+    } // End of Block
+     ];
     
 }
 
@@ -75,6 +84,23 @@
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
