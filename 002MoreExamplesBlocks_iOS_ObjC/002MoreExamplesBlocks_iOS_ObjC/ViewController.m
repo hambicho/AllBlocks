@@ -29,7 +29,10 @@
     
     //Declare a block variable "loggerBlock" with no parameters and no return value.
     void (^loggerBlock)(void);
-    
+
+    // Assign a block to the variable declared above. A block without parameters
+    // and with no return value, like this one, needs no "decorations" like the use
+    // of void in the preceding variable declaration.
     loggerBlock = ^{
         NSLog(@"Im just glad they didnt call it a lambda");
     };
@@ -39,6 +42,21 @@
 }
 
 - (IBAction)btn02:(id)sender {
+    // define a variable that can be changed by a block
+    __block int a = 0;
+    
+// define a block that tries to modify a variable in its scope
+    void (^sillyBlock)(void) = ^{  a = 47; };
+    
+// check the value of our variable before calling the block
+    NSLog(@" a == %d",a);  // outputs "a == 0"
+    
+// execute the block
+    sillyBlock();
+// check the values of our variable again, after calling the block
+    NSLog(@" a == %d",a);  // outputs "a == 47"    
+    
+    
     
     
 }
