@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+typedef void (^ArrayEnumerationBlock)(id, NSUInteger, BOOL *);
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
 //        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
@@ -21,7 +23,10 @@ int main(int argc, char * argv[]) {
         NSArray *vowels = [NSArray arrayWithObjects:@"a", @"e", @"i", @"o", @"u", nil];
         
         // Declare de block variable:
-        void (^devowelizer)(id, NSUInteger, BOOL *);
+//        void (^devowelizer)(id, NSUInteger, BOOL *);  // Basic way to declare Block
+        // But best declare this:
+        ArrayEnumerationBlock devowelizer;   // Way more friendly to declare Blocks
+        
         
         // Assign a block to the variable:
         devowelizer = ^(id string, NSUInteger i, BOOL *stop){
@@ -33,7 +38,7 @@ int main(int argc, char * argv[]) {
                 *stop = YES;    // Prevent further iterations
                 return;         // Stop this iteration
             }
-            // - - - - 
+            // - - - -
             
             
             NSMutableString *newString = [NSMutableString stringWithString:string];
