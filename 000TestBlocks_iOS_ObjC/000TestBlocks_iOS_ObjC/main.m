@@ -25,6 +25,17 @@ int main(int argc, char * argv[]) {
         
         // Assign a block to the variable:
         devowelizer = ^(id string, NSUInteger i, BOOL *stop){
+            
+            // ---- This is for consider only a one iteration
+            NSRange yRange = [string rangeOfString:@"y" options:NSCaseInsensitiveSearch];
+            // Did I find a y?
+            if (yRange.location != NSNotFound) {
+                *stop = YES;    // Prevent further iterations
+                return;         // Stop this iteration
+            }
+            // - - - - 
+            
+            
             NSMutableString *newString = [NSMutableString stringWithString:string];
             // Iterate over the array of vowel, replacing occurrences of each
             // with an smpty string
