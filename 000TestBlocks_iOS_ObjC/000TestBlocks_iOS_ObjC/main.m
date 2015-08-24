@@ -11,6 +11,14 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+//        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        
+        // Create the array of strings to devowelize and a container for new ones
+        NSArray *oldStrings = [NSArray arrayWithObjects:@"Sauerkraut", @"Raygun", @"Big Nerd Ranch", @"Mississippi", nil];
+        NSLog(@"old strings: %@", oldStrings);
+        NSMutableArray *newStrings = [NSMutableArray array];
+        // Create a list of characters that we'll remove from the string
+        NSArray *vowels = [NSArray arrayWithObjects:@"a", @"e", @"i", @"o", @"u", nil];
     }
+    return 0;
 }

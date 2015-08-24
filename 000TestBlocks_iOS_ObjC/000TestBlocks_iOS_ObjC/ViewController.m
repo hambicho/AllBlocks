@@ -20,6 +20,16 @@
     
     
     
+    ^{
+        NSLog(@"I'am a log statement within a block!");
+    };
+    
+    
+    ^(double dividend, double divisor){
+        double quotient = dividend / divisor;
+        return quotient;
+    
+    };
     
 }
 
