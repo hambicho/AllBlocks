@@ -184,9 +184,8 @@
 }
 
 - (IBAction)btn08:(id)sender {
-    
-    
-    
+    NSLog( @" - - -  Boton 8 - - - - ");    
+    independentBlockObject();
 }
 
 - (IBAction)btn069:(id)sender {
@@ -206,7 +205,14 @@
 
 
 
+void (^independentBlockObject)(void) = ^(void){
 
+    NSInteger localInteger = 10;
+    NSLog(@"local integer = %ld", (long)localInteger);
+
+    localInteger = 20;
+    NSLog(@"local integer = %ld", (long)localInteger);
+};
 
 
 
