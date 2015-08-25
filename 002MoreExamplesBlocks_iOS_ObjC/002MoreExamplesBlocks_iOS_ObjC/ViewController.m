@@ -189,7 +189,7 @@
 }
 
 - (IBAction)btn069:(id)sender {
-    
+    [self simpleMethod];
     
     
     
@@ -216,7 +216,26 @@ void (^independentBlockObject)(void) = ^(void){
 
 
 
+- (void) simpleMethod{
 
+    NSUInteger outsideVariable = 10;
+
+    NSMutableArray *array = [[NSMutableArray alloc]
+                             initWithObjects:@"obj1",
+                             @"obj2", nil];
+
+    [array sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        NSUInteger insideVariable = 20;
+
+        NSLog(@"Outside variable = %lu", (unsigned long)outsideVariable);
+        NSLog(@"Inside variable = %lu", (unsigned long)insideVariable);
+
+        /* Return value for our block object */
+        return NSOrderedSame;
+
+    }];
+
+}
 
 
 
